@@ -2,10 +2,16 @@
 int main(){
 	int a = 7;
 	int b = 2;
-	printf("a + b = %d\n", a + b);
-	printf("a - b = %d\n", a - b);
-	printf("a  * b = %d\n", a * b);
-	printf("a / b = %.2f", (float)a / b);
+	float kq;
+	kq = a + b;
+	printf("Ket qua cua %d + %d bang: %.0f\n", a, b, kq);
+	kq = a - b;
+	printf("Ket qua cua %d - %d bang: %.0f\n", a, b, kq);
+	kq = a * b;
+	printf("Ket qua cua %d * %d bang: %.0f\n", a, b, kq);
+	kq = (float) a / b;
+	printf("Ket qua cua %d / %d bang: %.2f\n", a, b, kq);
+	
 	return 0;
 
 
