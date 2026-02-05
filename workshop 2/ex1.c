@@ -1,9 +1,11 @@
+// Viet chuong trinh nhap vao n duong (kiem tra nhap dung, 0<n<=1000). Sau do tinh can bac 2 cua n.
+
 #include<stdio.h>
 #include<math.h>
 int main() {
 	float n;
 	printf("Nhap vao n: ");
-	while(scanf("%f", &n) !=1 || n<= 0 || n>=1000) {
+	while(scanf("%f", &n) !=1 || n<= 0 || n>1000) {
 
 		printf("Nhap lai n");
 		fflush(stdin); 
