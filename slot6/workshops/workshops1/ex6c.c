@@ -4,35 +4,15 @@ int main()
 	float score1, score2, score3;
 	char diemChu;
 	float sumScore;
-	printf("Nhap diem chuyen can: ");
-	int kq = scanf(" %f",&score1);
-	if (score1<0 || score1>10 || kq != 1)
+	printf("Nhap diem chuyen can, giua ky, cuoi ky: ");
+	int kq = scanf(" %f %f %f ",&score1, &score2, &score3);
+	if(kq != 1 || score1<0 || score1>10 || score2<0 || score2>10 || score2<0 || score2>10)
 	{
 		printf("Nhap sai!");
 		return 0;
 	}
-	else
-	{
-		printf("Nhap diem giua ky: ");
-		kq = scanf(" %f",&score2);
-		if (score2<0 || score2>10 || kq != 1)
-		{
-			printf("Nhap sai!");
-			return 0;
-		}
-		else
-		{
-			printf("Nhap diem cuoi ky: ");
-			kq = scanf(" %f",&score3);
-			if (score2<0 || score2>10 || kq != 1)
-			{
-				printf("Nhap sai!");
-				return 0;
-			}
-			else
-			{
-				sumScore = score1 * 0.1 + score2 * 0.3 + score3 * 0.6;
-				if (sumScore >= 8.5)
+	    sumScore = score1 * 0.1 + score2 * 0.3 + score3 * 0.6;
+	    if (sumScore >= 8.5)
 				{
 					diemChu = 'A';
 				}
@@ -76,4 +56,3 @@ int main()
 		}
 	}
 }	
-	
